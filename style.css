@@ -1,0 +1,499 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  border-color: #d991d9;
+}
+
+
+body{
+  background-image: url("data:image/jpeg;base64,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");
+  background-size: 5000px 5000px;
+  background-repeat: no-repeat;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HOME PAGE */
+ul{
+  list-style-type: none;
+  margin: 1px;
+ 
+}
+
+li{
+  display: inline;
+  padding: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  /* font-family: "Didact Gothic"; */
+  font-size: 25px;
+}
+
+li a:hover{
+  color: white;
+  font-size: 25px;
+  text-shadow: 8px 8px 8px black;
+}
+
+nav{
+  background-color: #dd81df;
+  padding: 30px;
+  border: solid 2.5px;
+}
+
+.web-heading{
+  color: #e0e0c8;
+}
+
+.home-pic{
+  float:left;
+  width: 500px;
+  margin-right: 300px;
+  padding: 30px;
+}
+
+.home-container{
+  display: flex;
+  justify-content: center;
+}
+
+.role-container{
+  margin-top: 45px;
+  
+}
+
+.role{
+  font-size: 60px;
+  padding: 10px;
+  position:relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: slide-left 3s linear;
+ /*  -webkit-text-stroke-color: #ffc7f5;
+  -webkit-text-stroke-width: 1px; */
+}
+
+/* slide animation on home page*/
+#slide {
+    position: absolute;
+    right: -100px;
+    width: 500px;
+    height: 100px;
+    -webkit-animation: slide 0.8s forwards;
+    /* -webkit-animation-delay: 2s; */
+    animation: slide 0.8s forwards;
+    /* animation-delay: 1s; */
+    text-shadow: 5px 5px 5px #f4bdff;
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
+}
+
+.home-container {
+  justify-content: center;
+  flex-direction: space-around;
+}
+
+.resume{
+  display: block;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 360px;
+}
+
+.r{
+  background-color: black;
+  padding: 20px;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-bottom: 1000px;
+  margin-top: 40px;
+}
+
+.res{
+  text-align: center;
+  font-size: 55px;
+  color: white;
+  
+}
+
+.test-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: space-between;
+}
+
+
+
+/* ABOUT PAGE */
+.about1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 70px;
+}
+
+.about2{
+  text-align: center;
+  margin-left: 300px;
+  font-size: 70px;
+  color: gray;
+}
+
+.abt{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 35px;
+  margin-top: 35px;
+  font-family: 'Verdana', sans-serif;
+  padding-bottom: 40px;
+}
+
+.abt-strong{
+  font-size: 55px;
+  color: #090939;
+}
+
+
+.abt-container{
+  padding: 15px;
+}
+
+.abt-img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.typing{
+  
+}
+
+.wrapper {
+  margin: 40px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 35ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-family: monospace; */
+  font-family: "Courier New", monospace;
+  font-size: 2em;
+  text-shadow: 5px 5px 5px #d1b8ff;
+  margin-bottom: 40px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* PROJECTS PAGE */
+.j{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 35px;
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 60px;
+}
+
+.timeline{
+  display: block;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.proj{
+  display: block;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.web-title{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.web-title:hover{
+  color: blue;
+}
+
+.web-des{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.title-date{
+  display: block;
+  justify-content: center;
+  margin: 10px;
+}
+
+.date{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
+.test-con{
+    padding: 30px;
+    background-color: purple;
+    border-radius: 40%;
+    margin-left: 280px;
+    margin-right: 280px;
+    border: 7px solid white;
+    margin-bottom: 30px;
+  }
+
+/* EXPERIENCE PAGE */ 
+.course{
+  font-size: 50px;
+  font-family: 'Verdana', sans-serif;
+  color: #360236; 
+  margin-top: 45px;
+  margin-left: 40px;
+}
+
+.courses{
+  font-size: 35px;
+  font-family: 'Verdana', sans-serif;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.exp{
+  padding-bottom: 30px;
+}
+
+/* RESPONSIVE TO MOBILE DEVICES */ 
+@media only screen and (max-device-width: 601px){
+  /* for home page */
+  nav{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .home-pic{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .role-container{
+    margin-top: 400px;
+  }
+
+  .role{
+    font-size: 35px;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  /* slide animation on home page*/
+  #slide {
+      position: absolute;
+      right: -100px;
+      width: 400px;
+      height: 100px;
+      -webkit-animation: slide 0.8s forwards;
+      /* -webkit-animation-delay: 2s; */
+      animation: slide 0.8s forwards;
+      /* animation-delay: 1s; */
+      text-shadow: 5px 5px 5px #f4bdff;
+  }
+
+  @-webkit-keyframes slide {
+      100% { right: 0; }
+  }
+
+  @keyframes slide {
+      100% { right: 0; }
+  }
+
+
+  /* print name animation */
+  .wrapper {
+    /* margin: 40px;
+    /*This part is important for centering */
+    display: grid;
+    place-items: center;
+  } 
+
+  .typing-demo {
+    width: 35ch;
+    border-right: 3px solid;
+    /* font-family: monospace; */
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    text-align: center;
+
+  
+  }
+
+   .home-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 300px;
+  }
+
+  /* for about page */
+  .about1{
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .about2{
+    font-size: 40px;
+    margin-left: 100px;
+  }
+
+  .abt-strong{
+    font-size: 35px;
+  }
+
+  .abt{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  /* for projects page */
+  .j{
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .title-date{
+    padding: 15px;
+  }
+
+  .date{
+    font-size: 23px;
+  }
+
+  .web-des{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  
+
+  /* for experience page */
+  .course{
+    font-size: 35px;
+  }
+
+  .courses{
+    font-size: 20px;
+  }
+  
+}
+
+/* RESPONSIVE TO LARGE COMPUTERS */
+@media only screen and (min-device-width: 1600px){
+  /* HOME PAGE */
+  .home-pic{
+    width: 900px;
+    margin-right: 800px;
+    padding: 100px;
+  }
+
+  .role-container{
+  margin-top: 65px;
+  
+}
+
+  .role{
+    font-size: 80px;
+    padding: 10px;
+    position:relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: slide-left 3s linear;
+  }
+
+    /* slide animation on home page*/
+  #slide {
+      position: absolute;
+      right: -200px;
+      width: 380px;
+      height: 100px;
+      margin-right: 350px;
+      -webkit-animation: slide 0.8s forwards;
+      /* -webkit-animation-delay: 2s; */
+      animation: slide 0.8s forwards;
+      /* animation-delay: 1s; */
+  }
+  
+  @-webkit-keyframes slide {
+      100% { right: 0; }
+  }
+  
+  @keyframes slide {
+      100% { right: 0; }
+  }
+
+ 
+
+  /* ABOUT PAGE */
+  .abt{
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 35px;
+    padding-bottom: 80px;
+  }
+
+}
